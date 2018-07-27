@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'gifticon#index'
+  
   get 'gifticon/index'
   get 'gifticon/new'
   get 'gifticon/creat'

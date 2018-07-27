@@ -11,7 +11,7 @@ class GifticonController < ApplicationController
   def show
   end
 
-  def updata
+  def update
   end
 
   def destroy
