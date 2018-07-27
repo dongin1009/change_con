@@ -19,4 +19,7 @@ class GifticonController < ApplicationController
 
   def edit
   end
+  
+  def login
+  end
 end
