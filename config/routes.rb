@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   get 'gifticon/index'
   get 'gifticon/new'
-  get 'gifticon/creat'
+  posts 'gifticon/creat'
   get 'gifticon/show'
   get 'gifticon/updata'
   get 'gifticon/destroy'
