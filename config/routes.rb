@@ -1,14 +1,7 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root 'gifticon#index'
-  
-  get 'gifticon/index'
-  get 'gifticon/new'
-  get 'gifticon/creat'
-  get 'gifticon/show'
-  get 'gifticon/updata'
-  get 'gifticon/destroy'
-  get 'gifticon/edit'
-  get 'gifticon/login'
+  resources :gifticon
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
