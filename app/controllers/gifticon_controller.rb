@@ -5,7 +5,7 @@ class GifticonController < ApplicationController
   def new
   end
 
-  def creat
+  def create
   end
 
   def show
@@ -20,6 +20,4 @@ class GifticonController < ApplicationController
   def edit
   end
   
-  def login
-  end
 end
