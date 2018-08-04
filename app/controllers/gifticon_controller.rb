@@ -3,6 +3,7 @@ class GifticonController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   
   def index
+    @item =Item.all
   end
 
   def new
@@ -17,7 +18,7 @@ class GifticonController < ApplicationController
 
   def show
   end
-
+  
   def update
     @item.update(item_params)
     redirect_to @item
