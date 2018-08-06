@@ -1,7 +1,7 @@
 <!-- Masthead -->
 <header class="masthead text-white text-center">
   <div class="create">
-   <h2>Listing posts</h2>
+   <h2>Listing items</h2>
 
 <table class="table">
   <thead>
@@ -12,13 +12,13 @@
   </thead>
 
   <tbody>
-    <% @posts.each do |post| %>
+    <% @item.each do |item| %>
       <tr>
-        <td><%= post.title %></td>
+        <td><%= item.title %></td>
         <td>
-          <%= link_to 'Show', post, class: 'btn btn-default' %>
-          <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-default' %>
-          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
+          <%= link_to 'Show', item, class: 'btn btn-default' %>
+          <%= link_to 'Edit', edit_item_path(item), class: 'btn btn-default' %>
+          <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default' %>
         </td>
       </tr>
     <% end %>
@@ -26,10 +26,8 @@
 </table>
 
 
-<%= link_to 'New Post', new_post_path, class: 'btn btn-default' %>
+<%= link_to 'New item', new_gifticon_path, class: 'btn btn-default' %>
 
-
-<%= link_to 'New Post', new_post_path, class: 'btn btn-default' %>
   </div>
   <div class="container">
     <div class="row">
@@ -137,7 +135,7 @@
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
           <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-          <h5>Sarah	W.</h5>
+          <h5>Sarah   W.</h5>
           <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
         </div>
       </div>

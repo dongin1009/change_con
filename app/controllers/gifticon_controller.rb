@@ -3,10 +3,10 @@ class GifticonController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   
   def index
+    @item = Item.all
   end
 
   def new
-    @item =Item.new
   end
 
   def create
@@ -16,6 +16,7 @@ class GifticonController < ApplicationController
   end
 
   def show
+     @item = Item.find_by_id(params[:id])
   end
 
   def update
@@ -33,10 +34,10 @@ class GifticonController < ApplicationController
   
   private
   def set_item
-    @item = Item.find(params[:id])
+    @item = Item.find_by_id(params[:id])
   end
   
   def item_params
-    params.require(:item).permit(:name, :content, :price)
+    params.require(:item).permit(:title, :content)
   end
 end
