@@ -1,19 +1,17 @@
 <h1>Gifticon#new</h1>
 <h2>New post</h2>
-<%= form_with scope: :gifticon, local: true do |form| %>
+<%= form_with url: gifticon_index_path, scope: :item, local: true do |form| %>
   <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
   </p>
  
   <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
   </p>
  
   <p>
     <%= form.submit %>
   </p>
 <% end %>
-<form action = "/gifticon/create" method = "post">
-<p>Find me in app/views/gifticon/new.html.erb</p>

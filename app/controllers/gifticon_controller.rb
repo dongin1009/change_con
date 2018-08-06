@@ -3,7 +3,7 @@ class GifticonController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   
   def index
-    @item = Item.all
+    @items = Item.all
   end
 
   def new
@@ -11,8 +11,10 @@ class GifticonController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    @item = save
-    redirect_to @item
+    @item.save
+
+    redirect_to root_path
+
   end
 
   def show
@@ -38,6 +40,6 @@ class GifticonController < ApplicationController
   end
   
   def item_params
-    params.require(:item).permit(:title, :content)
+    params.require(:item).permit(:name, :content)
   end
 end

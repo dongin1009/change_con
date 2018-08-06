@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
+  
+  ## 루트 페이지
   root 'gifticon#index'
+
+  ## Admin Page
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
+  ## Devise 사용자 회원가입, 로그인
+  devise_for :users
+
+  ## gifticon 경로
   resources :gifticon
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  
 end
