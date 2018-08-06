@@ -18,7 +18,7 @@ class GifticonController < ApplicationController
   def show
      @item = Item.find_by_id(params[:id])
   end
-
+  
   def update
     @item.update(item_params)
     redirect_to @item
