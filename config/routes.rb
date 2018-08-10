@@ -13,4 +13,17 @@ Rails.application.routes.draw do
   resources :gifticon
 
   
+<<<<<<< HEAD
+  get 'gifticon/index'
+  get 'gifticon/new'
+  get 'gifticon/creat'
+  get 'gifticon/show'
+  get 'gifticon/updata'
+  get 'gifticon/destroy'
+  get 'gifticon/edit'
+  get 'gifticon/login'
+  get 'gifticon/instruction'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+=======
+>>>>>>> 159f45e4b0180c3640eecaf9e8d554a9749a41d0
 end

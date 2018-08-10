@@ -17,6 +17,7 @@
     <nav class="navbar navbar-light bg-light static-top">
         <%= link_to "ChangeCon", root_path, class: "navbar-brand" %>
 
+
         <div class="box">
         <% if user_signed_in? %>
           <p class="pull-right"><%= current_user.email %></p>
