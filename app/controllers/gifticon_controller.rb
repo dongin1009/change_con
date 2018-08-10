@@ -20,4 +20,7 @@ class GifticonController < ApplicationController
   def edit
   end
   
+  def instruction
+  end
+  
 end
