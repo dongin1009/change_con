@@ -1,2 +1,15 @@
-<h1>Gifticon#show</h1>
-<p>Find me in app/views/gifticon/show.html.erb</p>
+<h2>Post Preview</h2>
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @item.content %>
+</p>
+
+<hr>
+<%= link_to 'Edit', edit_item_path(@item), class: 'btn btn-default' %>
+<%= link_to 'Back', items_path, class: 'btn btn-default' %>
