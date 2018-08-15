@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   ## gifticon 경로
   resources :gifticon
 
-  
+  get    '/posts/:id'      => 'posts#show'
 end

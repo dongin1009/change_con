@@ -1,8 +1,11 @@
 <h2>Post Preview</h2>
-
+<%= form_with model: @Item, scope: :item, multipart: true, local: true do |form| %>
+<p>
+    <%= @item.image %>
+</p>
 <p>
   <strong>Title:</strong>
-  <%= @item.title %>
+  <%= @item.name %>
 </p>
 
 <p>
@@ -11,5 +14,9 @@
 </p>
 
 <hr>
-<%= link_to 'Edit', edit_item_path(@item), class: 'btn btn-default' %>
-<%= link_to 'Back', items_path, class: 'btn btn-default' %>
+<%= link_to 'Edit', edit_gifticon_path(@item), class: 'btn btn-default' %>
+<%= link_to 'Back', gifticon_index_path, class: 'btn btn-default' %>
+<%= link_to "Delete",  gifticon_path(@item), class: 'btn btn-default', 
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %>
+<% end %>

@@ -1,6 +1,5 @@
-<h1>Gifticon#new</h1>
 <h2>New post</h2>
-<%= form_with url: gifticon_index_path, scope: :item, local: true do |form| %>
+<%= form_with url: gifticon_index_path, scope: :item,  multipart: true, local: true do |form| %>
   <p>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
@@ -9,6 +8,11 @@
   <p>
     <%= form.label :content %><br>
     <%= form.text_area :content %>
+  </p>
+  
+  <p>
+    <!--<input type="file" name="image">-->
+    <%= file_field_tag 'image' %><br>
   </p>
  
   <p>
