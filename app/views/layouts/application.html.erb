@@ -15,8 +15,9 @@
 
   <body>
     <nav class="navbar navbar-light bg-light static-top">
+      <div class="main">
         <%= link_to "ChangeCon", root_path, class: "navbar-brand" %>
-
+    </div>
 
         <div class="box">
         <% if user_signed_in? %>
@@ -31,5 +32,53 @@
     
     <%= yield %>
 
-  </body>
+
+
+<div class="topMenu">
+    <ul class="dept01">
+        <li>
+            <span>소개</span>
+            <ul class="dept02">
+                <li id="asd">
+                    changecon
+                </li>
+                    .
+                    .
+            </ul>
+        </li>
+        <li>
+            <span>거래</span>
+            <ul class="dept02">
+                <li>
+                    하위메뉴1
+                </li>
+                    .
+                    .
+            </ul>        
+        </li>
+             <li>
+            <span>사용법</span>
+            <ul class="dept02">
+                <li>
+                    하위메뉴1
+                </li>
+                    .
+                    .
+            </ul>        
+        </li>
+         <li>
+            <span>문의</span>
+            <ul class="dept02">
+                <li>
+                    하위메뉴1
+                </li>
+                    .
+                    .
+            </ul>        
+        </li>
+    </ul>
+</div>
+
+
+</body>
 </html>
