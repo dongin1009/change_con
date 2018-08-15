@@ -34,12 +34,9 @@ class GifticonController < ApplicationController
   def edit
   end
   
-<<<<<<< HEAD
   def instruction
   end
   
-end
-=======
   private
   def set_item
     @item = Item.find_by_id(params[:id])
@@ -49,4 +46,3 @@ end
     params.require(:item).permit(:name, :content)
   end
 end
->>>>>>> 159f45e4b0180c3640eecaf9e8d554a9749a41d0
