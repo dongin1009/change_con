@@ -38,6 +38,9 @@ class GifticonController < ApplicationController
 
   end
   
+  def instruction
+  end
+  
   private
   def set_item
     @item = Item.find_by_id(params[:id])
