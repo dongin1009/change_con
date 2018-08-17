@@ -12,10 +12,9 @@
 
 <%= form_with scope: :item, local: true do |form| %>
   <p>
-    <%= form.label :image %><br>
-    <%= file_field_tag 'image' %>
-  </p>
 
+    <%= form.label :image %><br>
+    <%= form.file_field :image %>
   <p>
       <%= form.label :name %><br>
       <%= form.text_field :name %>

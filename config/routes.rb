@@ -14,5 +14,6 @@ Rails.application.routes.draw do
 
 
   get    '/posts/:id'      => 'posts#show'
+  get    'posts/:id' => 'posts#edit'
 end
 
