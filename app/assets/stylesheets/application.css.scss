@@ -5,17 +5,13 @@
     padding : 5px 5px 5px 5px;
 }
 
-#dropdown {            // topMenu의 ID를 가진 태그의 스타일 지정
-                        height: 60px; // topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐)
-                        width: 600px; // topMenu의 넓이를 850px로 설정(제대로 설정 안하면 브라우져 넓이가 좁아지면 깨짐)
-                }
 
 #dropdown ul li {                       //안쪽
     list-style: none;            
     color: black;               
     background-color: yellow;  
     float: left;                
-    line-height: 30px;          
+    line-height: 50px;   
     vertical-align: middle;     
     text-align: center;
 }
@@ -55,15 +51,15 @@ div, ul, li { margin:0; padding:0; }
 #dropdown a {
 	height:500px;
 	color:#000000;
-	font-family:arial;         //선택된 요소의 글꼴 지정
-	font-size:20px;            //선택된 요소의 글자 크기
-	padding:140px 140px 140px 140px;     //내부 여백의 크기
-	text-decoration:none;      //문자에 밑줄 등 장식 효과
+	font-family : arial;         //선택된 요소의 글꼴 지정
+	font-size : 20px;            //선택된 요소의 글자 크기
+	padding : 145px 145px 145px 145px;     //내부 여백의 크기
+	text-decoration : none;      //문자에 밑줄 등 장식 효과
 }
 
 #dropdown a:hover {        //hover:마우스 커서가 위치한 요소를 선택한다
-	color:#D4F4FA;
-	border-bottom:3px solid #FAED7D;
+	color:red;          //글자에 색 들어오느거
+	border-bottom:1px solid black;    //글자 밑에 밑쥴
 }
 
 #dropdown ul ul {
