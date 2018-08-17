@@ -1,5 +1,32 @@
-<h1>Gifticon#edit</h1>
 <h2>Edit post</h2>
 
-<%= render 'form' %>
-<p>Find me in app/views/gifticon/edit.html.erb</p>
+
+<% if @item.errors.any? %>
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @item.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with scope: :item, local: true do |form| %>
+  <p>
+    <%= form.label :image %><br>
+    <%= file_field_tag 'image' %>
+  </p>
+
+  <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+  </p>
+  
+  <p>
+      <%= form.label :content %><br>
+      <%= form.text_area :content %>
+  </p>
+  
+  
+  <%= form.submit %>
+  
+<% end %>

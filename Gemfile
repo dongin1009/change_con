@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
 
+# 사진
+gem 'carrierwave'
 # 관리자 페이지
 gem 'rails_admin', '~> 1.3'
 # 로그인 관리

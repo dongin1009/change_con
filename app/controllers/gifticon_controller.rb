@@ -10,7 +10,7 @@ class GifticonController < ApplicationController
   end
 
   def create
-    @item = Item.new(item_params)
+    @item = Item.create(item_params)
     @item.save
 
     redirect_to root_path
@@ -23,6 +23,7 @@ class GifticonController < ApplicationController
   
   def update
     @item.update(item_params)
+    @item.update_attributes(params[:item])
     redirect_to @item
   end
   
@@ -32,17 +33,20 @@ class GifticonController < ApplicationController
   end
   
   def edit
+    @user = current_user
+    @item = Item.find(params[:id])
+
   end
   
   def instruction
   end
   
-end
   private
   def set_item
     @item = Item.find_by_id(params[:id])
   end
   
   def item_params
-    params.require(:item).permit(:name, :content)
+    params.require(:item).permit(:name, :content, :image)
   end
+end
