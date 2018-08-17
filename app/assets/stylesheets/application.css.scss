@@ -4,3 +4,13 @@
  .box{
     padding : 5px 5px 5px 5px;
 }
+
+#dropdown ul li {                       
+    list-style: none;            
+    color: black;               
+    background-color: #FFFFFF;  
+    float: left;                
+    line-height: 30px;          
+    vertical-align: middle;     
+    text-align: center;
+}
