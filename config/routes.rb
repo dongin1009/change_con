@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   resources :gifticon
 
   get    '/posts/:id'      => 'posts#show'
+  get    'posts/:id' => 'posts#edit'
 end

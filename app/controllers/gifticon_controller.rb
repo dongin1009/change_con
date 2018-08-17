@@ -19,6 +19,7 @@ class GifticonController < ApplicationController
 
   def show
      @item = Item.find_by_id(params[:id])
+   
   end
   
   def update
@@ -35,6 +36,7 @@ class GifticonController < ApplicationController
   def edit
     @user = current_user
     @item = Item.find(params[:id])
+    @item.save
 
   end
   
