@@ -27,47 +27,47 @@
           <%= link_to "회원가입", new_user_registration_path, class: "btn btn-primary" %>
           <%= link_to "로그인", new_user_session_path, class: "btn btn-primary" %>
         <% end %>
+        
+        
         </div>
     </nav>
     
     <div id="dropdown">
     <ul>
         
-    <li><a href="#">소개</a>
-    <ul>
-    <li><a href="#">Sub Menu 1</a></li>
-    <li><a href="#">Sub Menu 2</a></li>
-    <li><a href="#">Sub Menu 3</a></li>
-    </ul>
+    <li>
+     <%= link_to "체인지콘 소개", gifticon_introduce_path %>
     </li>
 
  
 
-    <li><a href="#">거래</a>
+    <li><a href="#">기프티콘</a>
+    
     <ul>
-    <li><a href="#">Sub Menu 1</a></li>
-    <li><a href="#">Sub Menu 2</a></li>
-    <li><a href="#">Sub Menu 3</a></li>
+ <%= link_to "기프티콘 구매 및 판매", gifticon_index_path %>
+    <li><a href="#">기프티콘 교환</a></li>
+    <li><a href="#">기프티콘 생성</a></li>
     </ul>
     </li>
 
     <li><a href="#">사용법</a>
     <ul>
-    <li><a href="#">거래</a></li>
-    <li><a href="#">판매</a></li>
-    <li><a href="#">교환</a></li>
+    <li><a href="#">기프티콘 구매</a></li>
+    <li><a href="#">기프티콘 판매</a></li>
+    <li><a href="#">기프티콘 교환</a></li>
     <li><a href="#">포인트</a></li>
     </ul>
     </li>
 
-    <li><a href="homes/index">문의</a>
- 
+    <li>
+      <%= link_to "문의", homes_index_path %>
     </li>
     
     </ul>
     </div>
     <br><br>
     <%= yield %>
+
 
 </body>
 </html>

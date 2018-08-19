@@ -17,7 +17,7 @@ resources :conversations, only: [:create] do
   resources :messages, only: [:create]
 end
 
-
+get '/gifticon/introduce'
 
   ## gifticon 경로
   resources :gifticon
