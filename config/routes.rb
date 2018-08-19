@@ -24,11 +24,8 @@ end
 
 
   get    '/posts/:id'      => 'posts#show'
-<<<<<<< Updated upstream
   get    'posts/:id' => 'posts#edit'
-=======
   
 
->>>>>>> Stashed changes
 end
 

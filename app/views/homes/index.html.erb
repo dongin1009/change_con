@@ -1,4 +1,4 @@
-<h2> chat </h2>
+<h2> 1:1 문의 </h2>
 
 
 <div class="container">
@@ -7,6 +7,7 @@
       <ul id="conversations-list">
         <% @conversations.each do |conversation| %>
           <%= render 'conversations/conversation', conversation: conversation, user: current_user %>
+        
         <% end %>
       </ul>
       
@@ -15,7 +16,7 @@
     <div class="col-md-3">
       <div class="panel panel-primary">
         <div class="panel-heading">
-          <h3 class="panel-title">User list</h3>
+          <h3 class="panel-title">대화 목록</h3>
         </div>
         <div class="panel-body">
           <ul>
@@ -28,3 +29,4 @@
     </div>
   </div>
 </div>
+
