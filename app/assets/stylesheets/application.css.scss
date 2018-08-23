@@ -18,6 +18,16 @@
 
 div, ul, li { margin: 0; padding: 0; }
 
+#error_explanation ul li{
+    margin-top: 25px;
+}
+.field_with_errors{
+    margin-top: 20px;
+}
+.actions{
+    margin-top: 20px;
+}
+
 #dropdown {                     //상자 그림자
 	position: relative;
 	display: inline-block;
