@@ -72,8 +72,8 @@ body {
   margin: 45px;
 }
 
-[tabindex="-1"]:focus {
-  outline: 0 !important;
+.actions{
+  
 }
 
 hr {
@@ -2971,6 +2971,14 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+}
+input[type="submit"]{
+    border-radius: 10px;
+    border-color: #FF9100;
+    margin-top: 15px;
+    background-color: #FFA500;
+    width: 250px;
+    height: 45px;
 }
 
 .fade {
