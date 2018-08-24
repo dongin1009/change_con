@@ -10,8 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_24_075428) do
+ActiveRecord::Schema.define(version: 2018_08_24_085721) do
+  
   create_table "barcodes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "conversations", force: :cascade do |t|
     t.integer "recipient_id"
     t.integer "sender_id"
@@ -80,5 +85,5 @@ ActiveRecord::Schema.define(version: 2018_08_24_075428) do
     t.index ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
     t.index ["user_id"], name: "index_users_roles_on_user_id"
   end
-end
+
 end

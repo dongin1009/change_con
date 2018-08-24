@@ -1,11 +1,34 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
- .box{
-    padding : 5px 5px 5px 5px;
+form {
+    margin-top: 30px;
 }
-
-
+.navbar-brand{
+    width: 150px;
+} //main이미지 크기
+div.box{
+    top: 240%;
+}
+ .box{
+     padding : 5px 85px 5px 5px;//로그인, 로그아웃 위치
+     position: absolute;
+    width: 350px;
+    height: 25px;
+    right: 2%;
+    margin-right: -25px;
+}
+a.btn.btn-warning{
+    background-color: #FFC81E;
+    color: #8B4513;
+    margin-left: 5px;
+}
+p.pull-right{
+    margin-top: -15px;
+}
+div#dropdown {
+    margin-top: 110px;
+}
 #dropdown ul li {                       //안쪽
     list-style: none;            
     color: black;               
@@ -30,14 +53,18 @@ div, ul, li { margin: 0; padding: 0; }
 .main{
     font-weight: bold;
     color: #FF9100;
-    margin-left: 50px; 
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 46%;
+    top: 40%;
 }
 
 #dropdown {                     //상자 그림자
 	position: relative;
 	display: inline-block;
 	float: center;
-	margin: 0px 0px 0px 0px;         //외부 공백의 크기
+	margin: 15px 0px 0px 0px;         //외부 공백의 크기
 	padding: 5px 5px 5px 5px;              //내부 여백의 크기
 	box-shadow: 0px 0px 15px rgba(1,1,1,.3);      //rgba:투명도 조절
 	-moz-box-shadow: 0px 0px 15px rgba(1,1,1,.3);

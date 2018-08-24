@@ -164,14 +164,14 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #FF9100;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #FF8200;
   text-decoration: underline;
 }
 
@@ -387,7 +387,8 @@ h2, .h2 {
     height: 20px;
     margin: 0 auto;
     background-position: -1px -1px;
-    color: #FF9100;
+    color: #FFC81E;
+    margin-top: 15px;
 }
 
 h3, .h3 {
@@ -1529,6 +1530,7 @@ pre code {
 }
 
 .table {
+  margin-top: 35px;
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
@@ -2377,15 +2379,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #8B4513;
+  background-color: #FFC81E;
+  border-color: #FFC81E;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: #8B4513;
+  background-color: #FFC81E;
+  border-color: #FFC81E;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2974,9 +2976,9 @@ input[type="button"].btn-block {
 }
 input[type="submit"]{
     border-radius: 10px;
-    border-color: #FF9100;
+    border-color: #FFC81E;
     margin-top: 15px;
-    background-color: #FFA500;
+    background-color: #FFC81E;
     width: 250px;
     height: 45px;
 }
@@ -6106,9 +6108,9 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
-.bg-light {
-  background-color: #f8f9fa !important;
-}
+/*.bg-light {
+ background-color: #f8f9fa !important;
+}*/
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,

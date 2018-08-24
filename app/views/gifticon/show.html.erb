@@ -14,6 +14,11 @@
   <%= @item.content %>
 </p>
 
+<p>
+ barcode = Barby::Code128B.new('BARBY')
+
+ puts barcode.to_ascii
+</p>
 <hr>
 <%= link_to '구매', class: 'btn btn-default', :data => {:confirm => "구매하시겠습니까>"} %>
 <%= link_to '문의', class: 'btn btn-default' %>

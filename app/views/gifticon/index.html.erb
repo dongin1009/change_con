@@ -1,6 +1,33 @@
 <h2>Listing items</h2>
 
-<%= link_to "기프티콘 판매", new_gifticon_path %>
+
+<table class="table" multipart: true>
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Title</th>
+      <th>content</th>
+    </tr>
+  </thead>
+
+  <tbody>
+   
+    <% @items.each do |item| %>
+      <tr>
+        <td><img src="<%= item.image.url %>"></td>
+        <td><%= item.name %></td>
+        <td><%= item.content %></td>
+        <td><%= link_to 'Show', gifticon_path(item) %></td>
+        <td><%= link_to "Edit", edit_gifticon_path(item) %></td>
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<h2>Listing items</h2>
+
 
 <table class="table" multipart: true>
   <thead>
@@ -27,4 +54,4 @@
 </table>
 
 <%= paginate @items %>
-<%= link_to "New item", new_gifticon_path %>
+<%= link_to "기프티콘 판매", new_gifticon_path %>
