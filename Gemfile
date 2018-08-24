@@ -7,8 +7,10 @@ ruby '2.4.1'
 gem 'carrierwave'
 # 관리자 페이지
 gem 'rails_admin', '~> 1.3'
-# 로그인 관리
-gem 'devise'
+# 회원인증 및 권한설정을 위한 젬
+gem 'devise'     # 회원가입 및 인증
+gem 'rolify'     # role 관리
+gem 'authority'  # 권한설정
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record

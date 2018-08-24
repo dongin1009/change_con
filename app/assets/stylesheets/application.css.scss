@@ -9,7 +9,7 @@
 #dropdown ul li {                       //안쪽
     list-style: none;            
     color: black;               
-    background-color: yellow;  
+    background-color: #FF91004;  
     float: left;                
     line-height: 50px;   
     vertical-align: middle;.     
@@ -47,7 +47,7 @@ div, ul, li { margin: 0; padding: 0; }
 	-khtml-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	background-color: blue;        //배경색 지정
+	background-color: #FFC81E;        //카테고리 배경색 지정
 }
 
 #dropdown ul li {    //글머리기호
@@ -60,19 +60,18 @@ div, ul, li { margin: 0; padding: 0; }
 	color:#000000;
 	font-family : arial;         //선택된 요소의 글꼴 지정
 	font-size : 20px;            //선택된 요소의 글자 크기
-	padding : 145px 145px 145px 145px;     //내부 여백의 크기
+	padding : 0px 145px 0px 145px;     //내부 여백의 크기
 	text-decoration : none;      //문자에 밑줄 등 장식 효과
 }
 
 #dropdown a:hover {        //hover:마우스 커서가 위치한 요소를 선택한다
-	color:red;          //글자에 색 들어오느거
-	border-bottom:1px solid black;    //글자 밑에 밑쥴
+	color:#dc50dc;          //글자에 색 들어오느거
 }
 
 #dropdown ul ul {
 	display:none;
 	position:absolute;
-	background-color:#800000;      //배경색 지정
+	background-color: #FAFAD2;      // 세부 카테고리 배경색 지정
 }
 
 #dropdown ul li:hover ul {
