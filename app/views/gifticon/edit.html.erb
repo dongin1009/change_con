@@ -1,16 +1,5 @@
 <h2>Edit post</h2>
-
-
-<% if @item.errors.any? %>
-  <h3>Please fix these errors:</h3>
-  <ul>
-    <% @item.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= form_with scope: :item, local: true do |form| %>
+<%= form_with url: gifticon_index_path, scope: :item, multipart: true, local: true do |form| %>
   <p>
 
     <%= form.label :image %><br>
@@ -27,5 +16,4 @@
   
   
   <%= form.submit %>
-  
 <% end %>

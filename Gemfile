@@ -2,9 +2,13 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
-
+gem 'rails_db'
+gem 'barby'
+gem 'fog-aws' #파일을 aws s3에 업로드가능하게
+gem 'mini_magick' #이미지크기조정
+gem 'kaminari'
 # 사진
-gem 'carrierwave'
+gem 'carrierwave' #파일업로드
 # 관리자 페이지
 gem 'rails_admin', '~> 1.3'
 # 로그인 관리
@@ -14,7 +18,7 @@ gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem 'rolify'
+gem 'rolify' #역할, 등급을 부여
 
 gem 'authority'
 

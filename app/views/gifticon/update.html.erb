@@ -1,2 +1,25 @@
-<h1>Gifticon#updata</h1>
-<p>Find me in app/views/gifticon/updata.html.erb</p>
+<h2>Post Preview</h2>
+<%= form_with model: @Item, scope: :item, multipart: true, local: true do |form| %>
+      <p>
+  <strong>Image:</strong>
+  <%= @item.image.url %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @item.content %>
+</p>
+
+<hr>
+<%= link_to '구매', class: 'btn btn-default', :data => {:confirm => "구매하시겠습니까>"} %>
+<%= link_to '문의', class: 'btn btn-default' %>
+<%= link_to 'Edit', edit_gifticon_path(@item), class: 'btn btn-default' %>
+<%= link_to 'Back', gifticon_index_path, class: 'btn btn-default' %>
+<%= link_to "Delete",  gifticon_path(@item), class: 'btn btn-default', 
+                         :data => {:confirm => "삭제하시겠습니까?",
+                                   :method => "delete"} %>
+<% end %>

@@ -21,11 +21,12 @@ get '/gifticon/introduce'
 
   ## gifticon 경로
   resources :gifticon
-
-
-  get    '/posts/:id'      => 'posts#show'
-  get    'posts/:id' => 'posts#edit'
   
+put '/gifticon/:id/update' => 'gifticon#update'
 
+  # get    '/posts/:id'      => 'posts#show'
+  # get    'posts/:id' => 'posts#edit'
+  
+post 'gifticon/:id/edit' => 'gifticon#show'
 end
 

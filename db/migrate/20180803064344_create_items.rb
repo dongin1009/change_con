@@ -1,6 +1,7 @@
 class CreateItems < ActiveRecord::Migration[5.2]
   def change
     create_table :items do |t|
+      t.integer    :item_id
       t.string     :seller
       t.string     :name
       t.string     :content
