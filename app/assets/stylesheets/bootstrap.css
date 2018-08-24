@@ -387,7 +387,7 @@ h2, .h2 {
     height: 20px;
     margin: 0 auto;
     background-position: -1px -1px;
-    color: #FF9100;
+    color: #FFC81E;
 }
 
 h3, .h3 {
@@ -2974,9 +2974,9 @@ input[type="button"].btn-block {
 }
 input[type="submit"]{
     border-radius: 10px;
-    border-color: #FF9100;
+    border-color: #FFC81E;
     margin-top: 15px;
-    background-color: #FFA500;
+    background-color: #FFC81E;
     width: 250px;
     height: 45px;
 }
