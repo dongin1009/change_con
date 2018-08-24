@@ -388,6 +388,7 @@ h2, .h2 {
     margin: 0 auto;
     background-position: -1px -1px;
     color: #FFC81E;
+    margin-top: 15px;
 }
 
 h3, .h3 {
@@ -1529,6 +1530,7 @@ pre code {
 }
 
 .table {
+  margin-top: 35px;
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
@@ -6106,9 +6108,9 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
-.bg-light {
-  background-color: #f8f9fa !important;
-}
+/*.bg-light {
+ background-color: #f8f9fa !important;
+}*/
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,

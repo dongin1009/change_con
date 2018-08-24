@@ -4,14 +4,25 @@
 .navbar-brand{
     width: 150px;
 } //main이미지 크기
+div.box{
+    top: 240%;
+}
  .box{
-    padding : 5px 45px 5px 5px;//로그인, 로그아웃 위치
+     padding : 5px 85px 5px 5px;//로그인, 로그아웃 위치
+     position: absolute;
+    width: 350px;
+    height: 25px;
+    right: 2%;
+    margin-right: -25px;
 }
 a.btn.btn-warning{
     background-color: #FFC81E;
     color: #8B4513;
+    margin-left: 5px;
 }
-
+div#dropdown {
+    margin-top: 110px;
+}
 #dropdown ul li {                       //안쪽
     list-style: none;            
     color: black;               
@@ -36,7 +47,11 @@ div, ul, li { margin: 0; padding: 0; }
 .main{
     font-weight: bold;
     color: #FF9100;
-    margin-left: 100px; 
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 46%;
+    top: 40%;
 }
 
 #dropdown {                     //상자 그림자
