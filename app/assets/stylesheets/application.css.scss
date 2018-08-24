@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+form {
+    margin-top: 30px;
+}
 .navbar-brand{
     width: 150px;
 } //main이미지 크기
@@ -19,6 +22,9 @@ a.btn.btn-warning{
     background-color: #FFC81E;
     color: #8B4513;
     margin-left: 5px;
+}
+p.pull-right{
+    margin-top: -15px;
 }
 div#dropdown {
     margin-top: 110px;
