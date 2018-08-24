@@ -12,41 +12,8 @@
     background-color: yellow;  
     float: left;                
     line-height: 50px;   
-    vertical-align: middle;     
+    vertical-align: middle;.     
     text-align: center;
-}
-.messages-list {
-    max-height: 200px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
- 
-.message-sent {
-    position: relative;
-    background-color: #D9EDF7;
-    border-color: #BCE8F1;
-    margin: 5px 20px;
-    padding: 10px;
-    margin-left:auto;
-    margin-right: 30px;
-    float: right;
-}
- 
-.message-sent-date {
-    margin-right: 15px;
-    float: right;
-}
- 
-.message-received {
-    background-color: #F1F0F0;
-    border-color: #EEEEEE;
-    margin: 5px 20px;
-    padding: 10px;
-    float: left;
-}
- 
-.message-received-date {
-    float: left;
 }
 
 div, ul, li { margin: 0; padding: 0; }
@@ -59,6 +26,11 @@ div, ul, li { margin: 0; padding: 0; }
 }
 .actions{
     margin-top: 20px;
+}
+.main{
+    font-weight: bold;
+    color: #FF9100;
+    margin-left: 50px; 
 }
 
 #dropdown {                     //상자 그림자
@@ -110,7 +82,6 @@ div, ul, li { margin: 0; padding: 0; }
 #dropdown ul ul li {        //하단바가 리스트 형태로 정렬됨
 	float:none;
 }
-
 .messages-list {
     max-height: 200px;
     overflow-y: auto;
