@@ -40,14 +40,20 @@ class GifticonController < ApplicationController
     #   end
     # end
     # redirect_to edit_gifticon_path
+    authorize_action_for @item
+    @item.update(item_params)
+    @item.update_attributes(params[:item])
+    redirect_to @item
   end
 
   def destroy
+    authorize_action_for @item
     @item.destroy
     redirect_to '#'
   end
 
   def edit
+    authorize_action_for @item
     @user = current_user
     @item = Item.find(params[:id])
     
